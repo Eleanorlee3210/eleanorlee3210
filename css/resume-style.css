@@ -1,0 +1,389 @@
+* {
+    vertical-align: top;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   /*  outline: #f00 1px solid; */
+}
+
+
+.bg_g{
+  background: #C9CDCD;
+}
+
+/* header */
+
+.header {
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #2E3739;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+.header small {
+    font-weight: 100;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header h2 {
+    
+    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header hr {
+    width: 500px;
+    border-color: white;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header .square {
+    position: relative;
+    width: 250px;
+    height: 35px;
+    background-color: #2E3739;
+    border: solid 2px white;
+    font-family: 微軟正黑體;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 32px;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* main */
+
+.main {
+    width: 100%;
+    font-size: 0;
+    margin: auto;
+    max-width: 1200px;
+
+}
+
+/* left  */
+
+.left {
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #E5E5E5;
+    color: #2E3739;
+}
+
+
+.left table{
+  position: absolute;
+  width: 100%; 
+  /* margin: auto;  */
+  
+}
+.left td{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: serif;
+  border-width: 0px 0px 1px 0px; 
+  border-style: solid;
+  letter-spacing: 1px;
+  font-family: 微軟正黑體;
+padding: 1px 0;}
+.left .table_title{
+  width: 80%;
+  border-width: 0px 0px 2px 0px; 
+  border-color: #333;
+  border-style: solid;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #333;
+  color: #fff;
+}
+
+.photoshot {
+    padding: 25px;
+    text-align: center;
+}
+
+.personal {
+    width: 100%;
+    height: 95px;
+
+}
+
+
+
+.education {
+    width: 100%;
+    height: 95px;
+    padding: 10px 0;
+}
+
+.work {
+    width: 100%;
+    height: 450px;
+
+
+}
+
+
+.contact {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+}
+.hobbies {
+    width: 100%;
+    height: 120px;
+    margin: 30px 0;
+}
+
+.hobbies td img{
+   padding: 20px 0;
+}
+
+/* right */
+
+.right {
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+   background-color: #F7F7F7;
+  color: #2E3739;
+}
+
+h3{
+  font-family: monospace;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+.profile p{
+  width: 100%; 
+ padding: 10px;
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: serif;
+  text-align: justify;
+  font-family: 微軟正黑體;
+}
+
+
+.profile,.program,.design,.work_pic{
+  padding: 10px;
+}
+
+
+
+
+.profile p{
+  width: 90%; left: 5px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 200;
+  text-align: justify;
+}
+.right td{
+  padding: 5px;
+}
+.circle{
+  width: 100px; 
+  height: 100px;
+  border-radius: 100%;
+  background-color: #2E3739;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.circle_white{
+  position: absolute;
+  width: 80px; height: 80px;
+  border-radius: 100%;
+  background-color: #F7F7F7;
+  font-size: 10px;
+  text-align: center;
+  line-height: 80px;
+  letter-spacing: 1px;
+  left: 10px; bottom: 10px;
+}
+.shadow{
+  position: absolute;
+  width: 80px; height: 80px;
+  transform-origin: left bottom;
+  left: 50px; bottom: 50px;
+  background-color: #DBDBDB;
+}
+.DB{
+  transform:rotate(90deg);
+}
+.DB2{
+  transform:rotate(180deg);
+}
+.set{
+  width: 93%; 
+  height: 45px;
+  margin-top: 10px;
+}
+.icon{
+  display: inline-block;
+  background-color: #2E3739;
+  color: white;
+  width: 35px; height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+.words{
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 14px;
+  left: 5px;
+}
+.chart{
+  width: 85%; height: 15px;
+  bottom: 15px; left: 45px;
+  border: solid 1px #2E3739;
+  background-color: #DBDBDB;
+  color: #2E3739;
+  padding-right: 5px;
+  text-align: right;
+  font-weight: 200;
+  font-size: 14px;
+  font-family: monospace;
+}
+.bar{
+  position: absolute;
+  left: 0px; top: 0px;
+  height: 14px;
+  background-color: #2E3739;
+}
+.PS{
+  width: 85%; 
+}
+.AI{
+  width: 90%; 
+}
+.max{
+  width: 90%; 
+}
+.AC{
+  width: 95%; 
+}
+.FL{
+  width: 70%; 
+}
+
+
+/* timeline */
+
+
+.timeline {
+  width:500px;
+  margin:20px 100px;
+  box-sizing:border-box;
+  border-left:solid 1px #333;
+  position: relative;
+  z-index: 2;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+
+.message {
+  width:65%;
+  box-sizing:border-box;
+  position: relative;
+  z-index: 2;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 5px;
+  font-size:14px;
+  font-family: 微軟正黑體;
+}
+
+.message .circle {
+  position: absolute;
+  top: 1px;
+  left: -25px;
+  background: #333;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.arrow_box{
+position: absolute;
+  padding-top: 70px;
+  left: -100px;
+  
+
+}
+
+
+.arrow{
+  bottom: 62px;
+}
+.arrow-square{
+  width: 60px; 
+  height: 25px;
+  background-color: #2E3739;
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  text-align: center;
+  line-height: 25px;
+}
+.arrow-triangle{
+  border-top: 13px solid #F7F7F7;
+  border-bottom: 12px solid #F7F7F7;
+  border-left: 15px solid #2E3739;
+  display:inline-block;
+  bottom: 25px; 
+  left: 60px;
+}
+.job{
+  bottom: 158px; 
+  left: 120px;
+  font-weight: 100;
+}
+
+.work_pic p{
+  font-family: 微軟正黑體;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 200;
+  text-align: justify;
+  padding-bottom: 19px;
+}
+
+
+.footer_bar {
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    font-weight: 500;
+    font-family: monospace;
+    color: white;
+    background-color: #2E3739;
+    letter-spacing: 5px;
+    line-height: 50px;
+    height: 50px;
+}

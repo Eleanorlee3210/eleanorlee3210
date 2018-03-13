@@ -1,0 +1,9 @@
+.warn{
+	width: 960px;
+	/*position: fixed;
+	bottom: 0;*/
+}
+.warn img{
+	width: 100%;
+	vertical-align: top;
+}

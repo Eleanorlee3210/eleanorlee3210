@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#imgbtnSubmit").click(function() {
+                alert("chk1.Attr: " + $("#chk1").attr("checked"));
+                alert("chk1.Prop: " + $("#chk1").prop("checked"));
+                alert("chk2.Attr: " + $("#chk2").attr("checked"));
+                alert("chk2.Prop: " + $("#chk2").prop("checked"));
+            });
+
+           $("#imgbtnChk").click(function() {
+                $("#chk1").attr("checked",true);
+                $("#chk2").prop("checked",true);
+            });
+        });
+    </script>
+ </head>
+<body>
+    <form id="form1" style="width:100%;">
+    <input type="checkbox" id="chk1" value="0" />
+    <input type="checkbox" id="chk2" value="0" checked=false />
+    <input type="button" id="imgbtnSubmit" value="確定" >
+     <input type="button" id="imgbtnChk" value="勾選" >
+    </form>
+</body>
+</html>

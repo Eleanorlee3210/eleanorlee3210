@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	<link rel="stylesheet" type="text/css" href="css/brand_nissan_GTR.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	
+	<link rel="icon" href="img/GT black.png" type="image/icon">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<title>BRAND_AMERI</title>
+</head>
+<body>		
+<!-- ======== smallbar-start ========	 -->
+	<div class="smallbar">
+		<div id="topMessage">
+			<div class="GTicon">
+				<figure>
+					<a href="index.html"><img src="img/LOGO1.png"></a>
+				</figure>
+			</div>
+			<div class="imenu">
+				<ul>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="brand.html">BRAND CENTROL</a></li>
+					<li><a href="vison.html">CONCEPT</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="topMessage">
+			<div class="GTicon">
+				<figure>
+					<img src="img/LOGO1.png">
+				</figure>
+			</div>
+			<div class="imenu">
+				<ul>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">BRAND CENTROL</a></li>
+					<li><a href="#">CONCEPT</a></li>
+					<li><a href="#">GALLERY</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hunber">
+			<div id="nav-container">
+		      <div class="toggle-icon">
+		        <span class="bar"></span>
+		        <span class="bar"></span>
+		        <span class="bar"></span>
+		      </div><!--toggle-icon-->
+		    </div><!-- /nav-container -->
+		</div>
+		<div class="hunber2">
+			<div id="nav-container">
+		      <div class="toggle-icon">
+		        <span class="bar"></span>
+		        <span class="bar"></span>
+		        <span class="bar"></span>
+		      </div><!-- /toggle-icon
+		    </div><!-- /nav-container -->
+			</div> 
+		</div>
+	</div>
+<!-- ======== smallbar-end ========	-->		
+
+<!-- ======== main-start ======== -->		
+	<div class="box">	
+		<div class="navbar">
+			<div class="container">
+				<div class="brandIcon brmoto">
+					<a href="index.html"><img src="img/LOGO1.png"></a>
+				</div>			
+				<div class="fake"></div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">NEWS</a></li>
+						<li><a href="brand.html">BRAND CENTROL</a></li>
+						<li><a href="vison.html">CONCEPT</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+					</ul>
+				</div>
+				<div class="comweb">
+					<div class="fb"><a href="#"><img src="img/facebook.png"></a></div>
+					<div class="twiter"><a href="#"><img src="img/twiter.png"></a></div>
+					<div class="youtube"><a href="#"><img src="img/youtube.png"></a></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+			<div class="txt">
+				<p>聞名世界的「東瀛戰神」猛爆性能，在2017年式Nissan GT-R上再度進化，針對六速雙離合器變速系統及引擎中高轉速反應重新調校，最大馬力提升20匹，達到565匹強大實力，峰值扭力則增加至64.5kgm，搭配AWD全時四輪驅動系統，0-100 km/h加速僅需2.7秒，令多數超跑難以望其項背，除了重新調校的車輛性能，Active Sound Enhancement(ASE) 主動式聲浪增強系統使用電子控制閥門，搭配全新NISMO鈦合金排氣系統，在高轉速時爆發出令人熱血激昂的引擎聲浪。</p>
+
+				<p>2017年式GT-R車輛外觀特別由Nissan御用改裝廠NISMO操刀設計的空力套件，搭配由全新引擎蓋延伸至水箱護罩的V-motion造型，車頭前方包含空力套件、前保桿及日行燈造型皆有大幅度改變，全新設計的車體外觀造就更為優異的空氣力學，減少空氣阻力以增加高速行駛時的車輛下壓力，並有效增加冷卻效能，前保桿、引擎蓋的設計使通過兩側葉子板的氣流變少、車體C柱及車尾兩側則採用防止小漩流產生的設計，讓車尾氣流獲得更好導引，進而提升車輛行駛的穩定性。</p>
+
+				<p>車室內裝部分大量使用Nappa真皮材質包覆，豪華質感大幅躍進，為滿足消費者多樣性需求，Premium車規內裝除原有的Black(黑色)、Ivory(象牙白)及Amber Red(琥珀紅)三種顏色外，2017年式新增了Samurai Black(武士黑)及Tan(古銅褐)，共有五種內裝色供選擇。</p>
+			</div>
+		
+	</div>
+<!-- ======== main-end ======== -->	
+
+
+
+
+
+
+
+		<script>
+			$(document).ready(function(){
+				$('.hunber').click(function(){
+					$('#topMessage').fadeOut(1500);
+					$('.hunber').css('display','none');	
+				 	$('.hunber2').css('display','block');	
+				 	$('.box').fadeIn(1500);
+				});	
+				$('.hunber2').click(function(){
+					$('#topMessage').fadeIn(1500);
+					$('.topMessage').css('display','none');
+					$('.hunber2').css('display','none');	
+				 	$('.hunber').css('display','block');	
+				 	$('.box').fadeOut(1500)
+				});
+			});	
+		</script>
+
+		<script>
+        $(".toggle-icon").click(function() {
+          $('#nav-container').toggleClass("pushed");
+        });
+
+    	</script>
+</body>
+</html>		

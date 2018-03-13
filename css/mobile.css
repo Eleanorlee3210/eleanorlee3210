@@ -1,0 +1,435 @@
+/* --手機版型------------------------------------- */
+
+@media screen and (max-width: 736px) {
+    * {
+        box-sizing: border-box;
+        /* 讓 padding 與 width 解除關係 */
+    }
+
+    html,
+    body {
+        -webkit-text-size-adjust: none;
+        /* iPhone 旋轉後 文字不要放大 */
+    }
+
+    .py_80 {
+        padding: 0;
+    }
+    .pb_40 {
+        padding: 0;
+    }
+
+    .wrapper {
+        min-width: 320px;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        background-color: rgba( 0, 0, 0, .7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+
+    .menu {
+        width: 100%;
+        /*         background-color: rgba( 0, 0, 0, .7); */
+        display: none;
+        margin-top: 60px;
+        /* 把主選單先關掉 */
+    }
+
+    .menu ul {
+        width: 100%;
+        height: auto;
+        /* 高度自動 */
+    }
+
+
+    .menu li {
+        display: block;
+    }
+
+
+    .menu li a {
+        background-color: rgba( 0, 0, 0, .7);
+        width: 100%;
+
+        font-size: 14px;
+        color: #fff;
+        display: block;
+
+        text-align: center;
+        line-height: 3em;
+        margin-left: 0px;
+    }
+
+    .menu li a:hover {
+        background-color: rgba( 0, 0, 0, .9);
+        width: 100%;
+
+        font-size: 14px;
+        color: #fff;
+        display: block;
+
+        text-align: center;
+        line-height: 3em;
+        margin-left: 0px;
+    }
+
+    .nav-mobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    /* 漢堡按鈕 */
+    #nav-toggle {
+        position: absolute;
+        left: 18px;
+        top: 22px;
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+    }
+    #nav-toggle span,
+    #nav-toggle span:before,
+    #nav-toggle span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: #ffffff;
+        position: absolute;
+        display: block;
+        content: "";
+        transition: all 300ms ease-in-out;
+    }
+    #nav-toggle span:before {
+        top: -10px;
+    }
+    #nav-toggle span:after {
+        bottom: -10px;
+    }
+    #nav-toggle.active span {
+        background-color: transparent;
+    }
+    #nav-toggle.active span:before,
+    #nav-toggle.active span:after {
+        top: 0;
+    }
+    #nav-toggle.active span:before {
+        transform: rotate(45deg);
+    }
+    #nav-toggle.active span:after {
+        transform: rotate(-45deg);
+    }
+
+
+    .logo img {
+        width: 100%;
+    }
+
+    .logo a {
+        width: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 2%;
+        right: 0;
+        /*  margin: 14px 0px; */
+    }
+    /* slide */
+    .slide {
+        width: 100%;
+        position: relative;
+       /*  margin-top: 10%; */
+    }
+    .slide img {
+        width: 100%;
+    }
+
+    .slide h1 {
+        width: 80%;
+        font-size: 22px;
+        color: #fff;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-right: 60px;
+        text-shadow: 5px 5px 10px #000;
+    }
+    /*story*/
+    .story .s_photo {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    .s_photo img {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .text {
+        width: 70%;
+        display: block;
+        float: none;
+        margin: auto;
+    }
+
+    .text h2 {
+        font-size: 40px;
+        color: #000;
+        line-height: 1.57;
+        padding: 0;
+        text-align: center;
+    }
+
+    .m_left {
+        width: 100%;
+        display: block;
+    }
+
+    .m_right {
+        width: 100%;
+        display: block;
+    }
+    /*beans*/
+    .b_photo {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .b_photo img {
+         width: 70%;
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+    /*drinks*/
+    .drinks .d_photo {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .d_photo img {
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .d_text {
+        width: 70%;
+        display: block;
+        float: none;
+        margin: auto;
+    }
+    /*patisserie*/
+    .patisserie .p_photo {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .p_photo img {
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+    /* coffee */
+    .boutique_box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .boutique_coffee h2 {
+        font-size: 25px;
+        color: #000;
+    }
+    /*flavored coffee*/
+    .flavored_box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .flavored_coffee h2 {
+        font-size: 25px;
+        color: #000;
+    }
+
+    .item {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .item .txt {
+    padding: 5px;
+}
+    /*espresso*/
+    .espresso_box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .espresso h2 {
+        font-size: 25px;
+        color: #000;
+    }
+    /*select*/
+    .select {
+        width: 100%;
+        margin-bottom: 0;
+        background-image: url(../image/shutterstock_284533538.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        padding: 250px 0;
+        vertical-align: top;
+    }
+    .select_text {
+        margin-top: -120px;
+    }
+
+    .select p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #fff;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    .select h2 {
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+    }
+
+
+.our_mission_l {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+    background-image: url(../image/shutterstock_384199084.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 200px 0;
+}
+
+.our_mission_r {
+    width: 100%;
+    float: none;
+    padding-top: 0;
+}
+
+.our_mission_text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.our_mission_r h2 {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+
+.our_mission_r p {
+    color: #000;
+    text-align: center;
+    margin-top: 0;
+    padding: 5px;
+}
+
+/*our_mission2*/
+
+.our_mission2 {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.our_mission2_l {
+    width: 100%;
+    float: none;
+    padding-top: 0;
+}
+
+
+
+
+.our_mission2_r {
+
+
+    width: 100%;
+    float: none;
+    background-image: url(../image/shutterstock_284533538.jpg);
+    background-size: 100% 100%;
+    padding: 200px 0;
+    margin-bottom: 0;
+    background-attachment: fixed;
+}
+
+.our_mission2_text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.our_mission2_l h2 {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+
+.our_mission2_l p {
+    color: #000;
+    text-align: center;
+    margin-top: 0;
+    padding: 5px;
+}
+
+/* news */
+
+.news h1 {
+    width: 80%;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+}
+
+/* 瀑布流 */
+
+#outbox{
+    -moz-column-count: 1;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 10px;
+    column-count: 1;
+    width:100%;
+    margin:0 auto;
+}
+
+.content_box{
+    width:337px;
+    display: block;
+    border: 1px dotted #4F4F4F;
+    padding: 10px;
+    margin: 0 auto;
+    overflow:hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;     
+}
+
+}

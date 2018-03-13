@@ -1,0 +1,125 @@
+.triangleBox{
+	width: 100vw;
+	height: 100vh;
+	display:none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:5;
+	overflow: hidden;
+}
+.triangle{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(124,25,36,1);
+}
+.tri1{
+	/*background-color: #ffa;*/
+	clip-path: polygon(0% 0%,25% 0%,0% 25%);
+	animation: bottom 0.7s backwards;
+}
+.tri2{
+	/*background-color: #aaf;*/
+	clip-path: polygon(25% 0%,50% 25%,25% 50%,0% 25%);
+	animation: top 0.7s .3s backwards;
+}
+.tri3{
+	/*background-color: #afa;*/
+	clip-path: polygon(25% 0%,75% 0%,50% 25%);
+	animation: bottom 0.7s backwards;
+}
+.tri4{
+	/*background-color: #aaf;*/
+	clip-path: polygon(75% 0%,100% 0%,75% 25%);
+	animation: left 0.7s backwards;
+}
+.tri5{
+	/*background-color: #ccc;*/
+	clip-path: polygon(100% 0%,100% 25%,75% 25%);
+	animation: bottom 0.7s backwards;
+}
+.tri6{
+	/*background-color: #faa;*/
+	clip-path: polygon(50% 25%,50% 50%,25% 50%);
+	animation: left 0.7s backwards;
+}
+.tri7{
+	/*background-color: #ffa;*/
+	clip-path: polygon(75% 0%,75% 50%,50% 50%,50% 25%);
+	animation: right 0.7s .1s backwards;
+}
+.tri8{
+	/*background-color: #aaf;*/
+	clip-path: polygon(75% 25%,100% 50%,75% 75%);
+	animation: bottom 0.7s backwards;
+}
+.tri9{
+	/*background-color: #125;*/
+	clip-path: polygon(75% 25%,100% 25%,100% 50%);
+	animation: top 0.7s .1s backwards;
+}
+.tri10{
+	/*background-color: #941;*/
+	clip-path: polygon(0% 25%,25% 50%,0% 75%);
+	animation: right 0.7s backwards;
+}
+.tri11{
+	/*background-color: #739;*/
+	clip-path: polygon(25% 50%,25% 75%,0% 100%,0% 75%);
+	animation: top 0.7s .2s backwards;
+}
+.tri12{
+	/*background-color: #982;*/
+	clip-path: polygon(25% 50%,50% 50%,50% 100%,25% 75%);
+	animation: bottom 0.7s .1s backwards;
+}
+.tri13{
+	/*background-color: #8b3;*/
+	clip-path: polygon(50% 50%,75% 50%,75% 75%,50% 75%);
+	animation: top 0.7s .3s backwards;
+}
+.tri14{
+	/*background-color: #12a;*/
+	clip-path: polygon(100% 50%,100% 75%,75% 100%,75% 75%);
+	animation: right 0.7s backwards;
+}
+.tri15{
+	/*background-color: #192;*/
+	clip-path: polygon(0% 100%,25% 75%,50% 100%);
+	animation: left 0.7s .2s backwards;
+}
+.tri16{
+	/*background-color: #241;*/
+	clip-path: polygon(50% 75%,75% 100%,50% 100%);
+	animation: right 0.7s backwards;
+}
+.tri17{
+	/*background-color: #997;*/
+	clip-path: polygon(50% 75%,75% 75%,75% 100%);
+	animation: left 0.7s .3s backwards;
+}
+.tri18{
+	/*background-color: #84b;*/
+	clip-path: polygon(100% 75%,100% 100%,75% 100%);
+	animation: top 0.7s .1s backwards;
+}
+
+@keyframes top{
+	0%{top: -100vh;left: 0;background-color: rgba(124,25,36,.0);}
+	100%{top:0;left: 0;background-color: rgba(124,25,36,1);}
+}
+@keyframes bottom{
+	0%{top: 100vh;left: 0;background-color: rgba(124,25,36,.0);}
+	100%{top:0;left: 0;background-color: rgba(124,25,36,1);}
+}
+@keyframes left{
+	0%{top: 0;left: -100vw;background-color: rgba(124,25,36,.0);}
+	100%{top:0;left: 0;background-color: rgba(124,25,36,1);}
+}
+@keyframes right{
+	0%{top:0;left: 100vw;background-color: rgba(124,25,36,.0);}
+	100%{top:0;left: 0;background-color: rgba(124,25,36,1);}
+}

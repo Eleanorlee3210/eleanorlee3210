@@ -1,0 +1,386 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*outline: 1px solid #f00;*/
+}
+body{
+	/*background-color: #333;*/
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear:both;
+}
+.btn{
+	position: relative;
+}
+.btn a{
+	background-color:  #7c1924;
+	/*border:1px solid #fff;*/
+	color: #fff;
+	font-family:Microsoft JhengHei;
+	font-size: 14px;
+	padding: 8px;
+	margin: 30px;
+	float: right;
+	position: relative;
+}
+.btn a:before{
+	content: '';
+	display: block;
+	width: 90%;
+	height: 80%;
+	border:1px solid #fff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+/*bannerStart*/
+.banner{
+	width: 100%;
+	/*background-image: url(../images/pruduct_bg.jpg);*/
+	background-size: 100% 100%;
+	text-align: center;
+}
+.banner img{
+	width: 100%;
+	margin-top: 60px;
+	vertical-align: top;
+	display: inline-block;
+}
+/*bannerEnd*/
+/*mainStart*/
+.main{
+	width: 100%;
+	padding: 10px;
+	position: relative;
+	box-sizing: border-box;
+}
+/*.main:before{
+	content: '';
+	display: block;
+	width: 90%;
+	height: 2px;
+	border-bottom: 2px dashed #7c1924;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}*/
+.main .winebox{
+	width: 70px;
+	float: left;
+}
+.main .winebox img{
+	width: 100%;
+	vertical-align: middle;
+	transform-origin: bottom;
+	animation: shake 4s .5s infinite;
+}
+@keyframes shake{
+	0%{
+		transform: rotateZ(0deg);
+	}
+	10%{
+		transform: rotateZ(10deg);
+	}
+	20%{
+		transform: rotateZ(-8deg);
+	}
+	30%{
+		transform: rotateZ(6deg);
+	}
+	40%{
+		transform: rotateZ(-4deg);
+	}
+	50%{
+		transform: rotateZ(2deg);
+	}
+	60%{
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(0deg);
+	}
+}
+.main h2{
+	font-size: 24px;
+	padding: 40px 0px 5px;
+	margin: 0 20px;
+	position: relative;
+	font-family:Microsoft JhengHei;
+	/*color: #fff;*/
+}
+.main h2:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #7c1924;
+	position: absolute;
+	bottom: 0;
+}
+.breadCrumb{
+	padding: 10px 30px;
+	font-size: 0;
+}
+.breadCrumb .page{
+	display: inline-block;
+}
+.breadCrumb .page + .page{
+	border-left:1px solid #000;
+}
+.breadCrumb .page a{
+	font-size: 16px;
+	color: #000;
+	padding: 0 10px;
+}
+
+/*contentStart*/
+.content{
+	width: 100%;
+	/*outline: 1px solid #f00;*/
+	padding: 40px 40px 0px;
+	position: relative;
+	/*margin: 0 40px;*/
+	box-sizing: border-box;
+}
+/*.content:before{
+	content: '';
+	display: block;
+	width: 90%;
+	height: 2px;
+	border-bottom: 2px dashed #7c1924;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}*/
+.tab{
+	display: none;
+}
+.content .picbox{
+	width: 100%;
+	float: left;
+}
+.content .pic{
+	/*width: 410px;*/
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	/*padding: 10px;*/
+	/*float: left;*/
+	text-align: center;
+	/*border:1px solid #ccc;*/
+	box-shadow: 0px 0px 5px #ccc;
+	cursor: auto;
+}
+.content .pic img{
+	width: 100%;
+	vertical-align: top;
+	transform: scale(1);
+	transition: .5s;
+}
+.content .info{
+	/*width: 410px;*/
+	width: 100%;
+	/*padding: 10px;*/
+	/*float: left;*/
+}
+.content .info h3{
+	margin: 20px 10px;
+	font-size: 24px;
+	font-family:Microsoft JhengHei;
+	position: relative;
+	text-shadow: 1px 1px 1px #888;
+}
+.content .info h3:before{
+	content: '';
+	display: block;
+	width: 50%;
+	height: 80%;
+	background-color: rgba(124,25,36,.7);
+	position: absolute;
+	z-index: -1;
+	top: 15px;
+	left: -10px;
+}
+.content .info p{
+	padding: 0 30px;
+	font-size: 16px;
+	color: #555;
+	line-height: 1.5;
+	font-family:Microsoft JhengHei;
+}
+.content .info p:nth-child(3){
+	padding-top: 10px;
+}
+.content .small{
+	clear: left;
+	width: 100%;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.content .small .sPic{
+	width: calc(33.333333% - 20px);
+	padding: 5px;
+	margin: 10px;
+	float: left;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 5px #ccc;
+}
+.content .small .sPic img{
+	width: 100%;
+}
+.content .zoom{
+	display: none;
+}
+.content .zoom .zoompic{
+	display: none;
+}
+.content #zoomin{
+	display: none;
+}
+
+
+@media screen and (max-width: 767px){
+	.tab{
+		display: block;
+		font-size: 0;
+	}
+	.tab div{
+		width: 50%;
+		padding: 5px 20px;
+		margin-top: 10px;
+		box-sizing: border-box;
+		font-size: 20px;
+		font-family:Microsoft JhengHei;
+		color:#000;
+		box-shadow: 0px 0px 2px #777;
+		display: inline-block;
+		text-align: center;
+		cursor: pointer;
+	}
+	.pic{
+		display: block;
+	}
+	.info{
+		display: none;
+	}
+
+}
+@media screen and (min-width: 768px){
+	/*bannerStart*/
+	.banner{
+		background-image: url(../images/pruduct_bg.jpg);
+	}
+	.banner img{
+		width: 66%;
+		margin-top: 0;
+	}
+	/*bannerEnd*/
+
+	.main{
+		max-width: 1200px;
+		margin: auto;
+	}
+	.main h2{
+		font-size: 36px;
+	}
+
+	.content{
+		max-width: 1200px;
+		margin: auto;
+	}
+	.content .picbox{
+		width: 40%;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+	.content .pic{
+		width: 100%;
+		box-sizing: border-box;
+		display: block;
+		float: left;
+	}
+	.content .info{
+		width: 60%;
+		padding: 15px 30px;
+		display: block;
+		box-sizing: border-box;
+		float: left;
+	}
+	.content .pic{
+		cursor: zoom-in;
+	}
+	.content .pic:hover img{
+		transform: scale(1.05);
+	}
+	.content .small{
+		width: 100%;
+	}
+	.content .zoom .zoompic img{
+		height: 95%;
+		padding: 15px;
+		vertical-align: middle;
+	}
+	.content #zoomin:checked ~ .zoom{
+		transition: top 0s 0s,
+					opacity 1s 0s;
+		top: 0;
+		opacity: 1;
+	}
+	.content .zoom{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		display: block;
+		z-index: 5;
+		top: -100vw;
+		left: 0;
+		background-color: rgba(0,0,0,.6);
+		/*outline: 1px solid #f00;*/
+		opacity: 0;
+		transition: .5;
+	}
+	.content .zoom .zoompic{
+		width: 600px;
+		height: 600px;
+		display: block;
+		position: absolute;
+		z-index: 1;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		background-color: #fff;
+		box-shadow: 0px 0px 5px #ccc;
+		text-align: center;
+	}
+	.content .zoom .zoompic:before{
+		content: '';
+		display: block;
+		width: 98%;
+		height: 98%;
+		border:3px dashed #ccc;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.content .zoom .close{
+		width: 100%;
+		height: 100%;
+		cursor: zoom-out;
+		/*position: absolute;
+		z-index: 2;
+		left: 67%;
+		top: 15%;*/
+	}
+}

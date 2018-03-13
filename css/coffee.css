@@ -1,0 +1,279 @@
+/*boutique_coffee*/
+
+.boutique_coffee {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+/*.boutique_coffee:after{
+    content: '';
+    clear: both;
+    display: block;
+}*/
+
+
+
+
+.boutique_box {
+    width: 70%;
+    margin: auto;
+}
+
+.boutique_coffee h2 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*flavored coffee*/
+
+.flavored_coffee {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+/*.flavored_coffee:after{
+    content: '';
+    clear: both;
+    display: block;
+}*/
+
+.flavored_coffee h2 {
+    text-align: center;
+}
+
+
+.flavored_box {
+    width: 70%;
+    margin: auto;
+}
+
+.flavored_coffee h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+.item {
+    width: 33%;
+    display: inline-block;
+}
+
+.item .pic img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.item .txt {
+    padding-top: 20px;
+}
+
+.item .txt h3 {
+    font-size: 20px;
+    color: #000;
+}
+
+.item .txt p {
+    border-top: 1px solid #000;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*espresso*/
+
+.espresso {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.espresso h2 {
+    text-align: center;
+}
+
+
+.espresso_box {
+    width: 70%;
+    margin: auto;
+}
+
+.espresso h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+/*select*/
+
+
+/*.select {
+    position: relative;
+}*/
+
+.select {
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url(../image/shutterstock_284533538.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 250px 0;
+    vertical-align: top;
+}
+
+.select p {
+    width: 80%;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.select h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*our_mission*/
+
+.our_mission {
+    width: 100%;
+    background-color: #fff;
+    /*    position: relative; */
+}
+
+
+.our_mission_l {
+    width: 40%;
+    float: left;
+    margin-bottom: 0;
+    background-image: url(../image/shutterstock_384199084.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 400px 0;
+}
+
+
+
+
+.our_mission_r {
+    width: 60%;
+    float: left;
+    padding-top: 18%;
+}
+
+.our_mission_text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.our_mission_r h2 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.our_mission_r p {
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+/*our_mission2*/
+
+.our_mission2 {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.our_mission2_l {
+    width: 60%;
+    float: left;
+    padding-top: 18%;
+}
+
+
+
+
+.our_mission2_r {
+
+
+    width: 40%;
+    float: left;
+    background-image: url(../image/shutterstock_284533538.jpg);
+    background-size: 100% 100%;
+    padding: 400px 0;
+    margin-bottom: 0;
+    background-attachment: fixed;
+}
+
+.our_mission2_text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.our_mission2_l h2 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.our_mission2_l p {
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+}

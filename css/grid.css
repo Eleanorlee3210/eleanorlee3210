@@ -1,0 +1,62 @@
+div[class^=grid-]{
+	float: left;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+@media screen and (max-width:767px){
+	.grid-phone-1{ width: 8.333333%;}
+	.grid-phone-2{ width: 16.666666%;}
+	.grid-phone-3{ width: 25%;}
+	.grid-phone-4{ width: 33.333333%;}
+	.grid-phone-5{ width: 41.666666%;}
+	.grid-phone-6{ width: 50%;}
+	.grid-phone-7{ width: 58.333333%;}
+	.grid-phone-8{ width: 66.666666%;}
+	.grid-phone-9{ width: 75%;}
+	.grid-phone-10{ width: 83.333333%;}
+	.grid-phone-11{ width: 91.666666%;}
+	.grid-phone-12{ width: 100%;}
+}
+@media screen and (min-width:768px){
+	.grid-768-1{ width: 8.333333%;}
+	.grid-768-2{ width: 16.666666%;}
+	.grid-768-3{ width: 25%;}
+	.grid-768-4{ width: 33.333333%;}
+	.grid-768-5{ width: 41.666666%;}
+	.grid-768-6{ width: 50%;}
+	.grid-768-7{ width: 58.333333%;}
+	.grid-768-8{ width: 66.666666%;}
+	.grid-768-9{ width: 75%;}
+	.grid-768-10{ width: 83.333333%;}
+	.grid-768-11{ width: 91.666666%;}
+	.grid-768-12{ width: 100%;}
+}
+@media screen and (min-width:992px){
+	.grid-992-1{ width: 8.333333%;}
+	.grid-992-2{ width: 16.666666%;}
+	.grid-992-3{ width: 25%;}
+	.grid-992-4{ width: 33.333333%;}
+	.grid-992-5{ width: 41.666666%;}
+	.grid-992-6{ width: 50%;}
+	.grid-992-7{ width: 58.333333%;} 
+	.grid-992-8{ width: 66.666666%;}
+	.grid-992-9{ width: 75%;}
+	.grid-992-10{ width: 83.333333%;}
+	.grid-992-11{ width: 91.666666%;}
+	.grid-992-12{ width: 100%;}
+}
+@media screen and (min-width:1200px){
+	.grid-computer-1{ width: 8.333333%;}
+	.grid-computer-2{ width: 16.666666%;}
+	.grid-computer-3{ width: 25%;}
+	.grid-computer-4{ width: 33.333333%;}
+	.grid-computer-5{ width: 41.666666%;}
+	.grid-computer-6{ width: 50%;}
+	.grid-computer-7{ width: 58.333333%;}
+	.grid-computer-8{ width: 66.666666%;}
+	.grid-computer-9{ width: 75%;}
+	.grid-computer-10{ width: 83.333333%;}
+	.grid-computer-11{ width: 91.666666%;}
+	.grid-computer-12{ width: 100%;}
+}

@@ -1,0 +1,933 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Microsoft JhengHei, Roboto;
+    /*  outline: #f00 1px solid; */
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.py_80 {
+    padding: 80px 0;
+}
+
+.py_120 {
+    padding: 120px 0;
+}
+
+.pb_40 {
+    padding-bottom: 40px;
+}
+
+.color_white {
+    color: #fff;
+}
+
+.img-r {
+    max-width: 100%;
+}
+
+
+
+
+
+/*body {
+-moz-user-select : none;
+-webkit-user-select: none;
+}*/
+
+.wrapper {
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url(../images/index-image/wood.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+
+/*.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+*/
+
+
+/*header*/
+
+
+/*ol, ul{
+    margin-bottom: 0;
+}*/
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: rgba( 0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 60px;
+}
+
+
+
+.menu ul {
+    width: 100%;
+    height: 60px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 60px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo a {
+    width: 15%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 43%;
+    margin: 14px 0px;
+}
+
+
+
+
+
+/*在PC上隱藏漢堡選單*/
+
+.nav-mobile {
+    display: none;
+}
+
+
+
+
+
+/*Slide*/
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slide h1 {
+    width: 55%;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    bottom: 35%;
+    right: 0;
+    padding-right: 60px;
+    text-shadow: 5px 5px 10px #000;
+}
+
+.slide h2 {
+    width: 55%;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 32%;
+    right: -5%;
+    padding-right: 60px;
+    text-shadow: 5px 5px 10px #000;
+}
+
+
+
+
+
+
+
+
+
+
+/*story*/
+
+.story {
+    /* width: 960px; */
+    width: 100%;
+    /*margin-bottom: 500px;*/
+    /*  background-color: #fff; */
+    background-image: url(../images/index-image/coffee_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.story .s_photo {
+    width: 30%;
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.s_photo img {
+    width: 180px;
+    padding: 1.5px;
+}
+
+.text {
+    width: 30%;
+    display: inline-block;
+    float: right;
+    margin-right: 20%;
+}
+
+.text h2 {
+    font-size: 40px;
+    color: #000;
+    line-height: 1.57;
+    padding: 0 20px;
+}
+
+.text p {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.93;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+/*our_menu*/
+
+.our_menu {
+    width: 100%;
+    text-align: center;
+}
+
+.our_menu h2 {
+    font-size: 40px;
+}
+
+.main-menu-content {
+    width: 100%;
+}
+
+.main-menu li {
+    display: inline;
+    margin: 0 8px;
+}
+
+
+.main-menu li a {
+    font-size: 14px;
+    font-style: oblique;
+}
+
+.main-menu li a:after {
+    content: '/';
+    margin: 0 8px;
+}
+
+.main-menu li:last-child a:after {
+    content: "";
+}
+
+
+.m_left {
+    width: 25%;
+    display: inline-block;
+}
+
+
+.c_name {
+    float: left;
+}
+
+.money {
+    display: block;
+    text-align: right;
+}
+
+
+
+
+
+/* .m1{
+    margin: 10px;
+} */
+
+
+/* .m1:after{
+    content: '';
+    border-bottom: 2px solid #f00;
+
+} */
+
+.m1 h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.m1 span {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+}
+
+.menu_content span {
+    width: 50%;
+    text-align: center;
+}
+
+.m_right {
+    width: 25%;
+    display: inline-block;
+}
+
+
+
+
+
+/*beans*/
+
+.beans {
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../images/index-image/coffee_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+}
+
+.b_photo {
+    width: 30%;
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.b_photo img {
+    width: 236px;
+    padding: 1.5px;
+}
+
+
+
+
+
+
+
+
+
+/*drinks*/
+
+.drinks {
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../images/index-image/coffee_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.drinks .d_photo {
+    width: 30%;
+    display: inline-block;
+    margin-right: 20%;
+}
+
+.d_photo img {
+    width: 236px;
+    padding: 1.5px;
+}
+
+.d_text {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin-left: 20%;
+}
+
+.d_text h2 {
+    font-size: 40px;
+    color: #000;
+    line-height: 1.57;
+    padding: 0 20px;
+}
+
+.d_text p {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.93;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+/*patisserie*/
+
+.patisserie {
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../images/index-image/coffee_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
+
+.patisserie .p_photo {
+    width: 30%;
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.p_photo img {
+    width: 236px;
+    padding: 1.5px;
+}
+
+
+
+
+
+
+
+
+
+/*address*/
+
+.address {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.address h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.c1 {
+    display: inline-block;
+    padding: 30px;
+}
+
+.c1 h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.c1 p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.c1_l {
+    padding-bottom: 50px;
+}
+
+.c2 {
+    display: inline-block;
+    padding: 30px;
+}
+
+.c2 h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.c2 p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.c2_r {
+    padding-bottom: 50px;
+}
+
+.botton {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 15%;
+}
+
+.botton a {
+    background: #FF8707;
+    width: 120px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.botton a:hover {
+    background: #FFC50C;
+    width: 120px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+
+
+/* news */
+
+.news {
+    width: 100%;
+    position: relative;
+}
+
+.news img {
+    width: 100%;
+}
+
+.news h1 {
+    width: 80%;
+    font-size: 55px;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+}
+
+
+
+
+
+/*footer*/
+
+.footer {
+    background-color: #000;
+    text-align: center;
+}
+
+.f_logo img {
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.icon i {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 5px;
+    margin-bottom: 60px;
+}
+
+span {
+    font-size: 13px;
+    color: #999;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+
+/* news */
+
+
+/* 瀑布流 */
+
+#outbox {
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* -moz-对应 Firefox, 
+-webkit-对应 Safari and Chrome
+ -o- for Opera
+ -ms- for Internet Explorer */
+
+.content_box {
+    width: 337px;
+    display: inline-block;
+    border: 1px dotted #4F4F4F;
+    /* padding: 10px; */
+    margin: 5px 5px 5px 0;
+    overflow: hidden;
+   /*  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; */
+    position: relative;
+}
+
+
+.content_box_text {
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+}
+
+
+.content_box h3,
+.content_box p {
+    padding: 10px 0;
+    opacity: 0;
+}
+
+
+.line {
+    width: 0;
+    border-top: 1px solid #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: .5s all;
+    /* opacity: 0; */
+}
+
+.content_box figure:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content_box:hover  figure:before{
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.content_box:hover h3,
+.content_box:hover p {
+    opacity: 1;
+}
+
+.content_box:hover .line {
+    width: 80%;
+    opacity: 1;
+} 
+
+
+
+
+/* coffee */
+
+/*boutique_coffee*/
+
+.boutique_coffee {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+/*.boutique_coffee:after{
+    content: '';
+    clear: both;
+    display: block;
+}*/
+
+
+
+
+.boutique_box {
+    width: 70%;
+    margin: auto;
+}
+
+.boutique_coffee h2 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*flavored coffee*/
+
+.flavored_coffee {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+/*.flavored_coffee:after{
+    content: '';
+    clear: both;
+    display: block;
+}*/
+
+.flavored_coffee h2 {
+    text-align: center;
+}
+
+
+.flavored_box {
+    width: 70%;
+    margin: auto;
+}
+
+.flavored_coffee h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+.item {
+    width: 33%;
+    display: inline-block;
+}
+
+.item .pic img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.item .txt {
+    padding-top: 20px;
+}
+
+.item .txt h3 {
+    font-size: 20px;
+    color: #000;
+}
+
+.item .txt p {
+    border-top: 1px solid #000;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*espresso*/
+
+.espresso {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.espresso h2 {
+    text-align: center;
+}
+
+
+.espresso_box {
+    width: 70%;
+    margin: auto;
+}
+
+.espresso h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+/*select*/
+
+
+/*.select {
+    position: relative;
+}*/
+
+.select {
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url(../images/index-image/shutterstock_284533538.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 250px 0;
+    vertical-align: top;
+}
+
+.select p {
+    width: 80%;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.select h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*our_mission*/
+
+.our_mission {
+    width: 100%;
+    background-color: #fff;
+    /*    position: relative; */
+}
+
+
+.our_mission_l {
+    width: 40%;
+    float: left;
+    margin-bottom: 0;
+    background-image: url(../images/index-image/shutterstock_384199084.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 400px 0;
+}
+
+
+
+
+.our_mission_r {
+    width: 60%;
+    float: left;
+    padding-top: 18%;
+}
+
+.our_mission_text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.our_mission_r h2 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.our_mission_r p {
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+/*our_mission2*/
+
+.our_mission2 {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.our_mission2_l {
+    width: 60%;
+    float: left;
+    padding-top: 18%;
+}
+
+
+
+
+.our_mission2_r {
+
+
+    width: 40%;
+    float: left;
+    background-image: url(../images/index-image/shutterstock_388116013.jpg);
+    background-size: 100% 100%;
+    padding: 400px 0;
+    margin-bottom: 0;
+    background-attachment: fixed;
+}
+
+.our_mission2_text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.our_mission2_l h2 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.our_mission2_l p {
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+}

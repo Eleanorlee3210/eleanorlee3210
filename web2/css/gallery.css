@@ -1,0 +1,775 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	/*outline: 1px solid red;*/
+}
+.box1{
+	background-color: #202C3F;
+}
+.navbar{
+	width: 100%;
+	background-color: #222;
+	opacity: .7;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+.smallbar{
+	display: none;
+}
+.container{
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+.brandIcon{
+	width: 5%;
+	float: left;
+}
+.brandIcon img{
+	width: 50%;
+	padding-top: 5%;
+	transition: .5s;
+	margin-left: 15%;
+}
+.brandIcon img:hover{
+	opacity: .8;
+	transition: .3s;
+}
+.fake{
+	width: 5%;
+	height: 30px;
+	padding-left: 2%;
+	float: left;
+}
+.menu{
+	width: 65%;
+	height: 30px;
+	float: left;
+}
+.menu li{
+	width: 8%;
+	height: 30px;
+	padding-top: .5%;
+	margin-left: 1%;
+	float: left;
+}
+.menu li:nth-of-type(1){
+	width: 5%;
+	height: 30px;
+	float: left;
+}
+.menu li:nth-of-type(1):hover a{
+	border-bottom: 2px solid #ff0;
+	opacity: .8;
+	color:#fff;
+}
+.menu li:nth-of-type(2){
+	width: 15%;
+	height: 30px;
+	padding-left: .5%;
+	float: left;
+	white-space: nowrap;
+}
+.menu li:nth-of-type(2):hover a{
+	border-bottom: 2px solid #ff0;
+	opacity: .8;
+	color:#fff;
+}
+.menu li:nth-of-type(3):hover a{
+	border-bottom: 2px solid #ff0;
+	opacity: .8;
+	color:#fff;
+}
+
+.menu li:nth-of-type(4):hover a{
+	border-bottom: 2px solid #ff0;
+	opacity: .8;
+	color:#fff;
+}
+.menu li a{
+	color: #fff;
+	font-family: 'arial';
+	font-size: 1vw;
+	text-decoration: none;
+}
+.menu li:nth-of-type(4) a{
+	border-bottom: 2px solid #ff0;
+}
+.comweb{
+	width: 25%;
+	height: 30px;
+	float: left; 
+}
+.comweb div{
+	width: 8.333333%;
+	height: 30px;
+	padding-top: 1%;
+	margin-left: 1%;
+	float: left;
+}
+.comweb img{
+	width: 70%;
+	transition: 0.5s;
+}
+.comweb :nth-of-type(1):hover img{
+	opacity: .5;
+	transition: 0.5s;
+
+}
+.comweb :nth-of-type(2):hover img{
+	opacity: .5;
+	transition: 0.5s;
+
+}
+.comweb :nth-of-type(3):hover img{
+	opacity: .5;
+	transition: 0.5s;
+
+}
+.clear{
+	clear: left;
+}
+.visonbox{
+	position: relative;
+	top: 100px;
+	width: 85%;
+	height: 750px;
+	margin: auto;
+}
+
+#theDiv{
+	font:14px Tahoma;
+	border:1px solid #ccc;	
+	padding:5px;
+	background: #fff,opacity:.5;
+	color: #fff;
+	position:absolute;
+	display:none;
+	z-index: 3;
+}
+
+
+@keyframes animations{
+    0%{transform:translate(0,1150px);}
+    20%{transform:translate(0,850px);}
+    30%{transform:translate(0,-350px);}
+    40%{transform:translate(0,0);}
+    42%{transform:scale(1.1,.6) skew(5deg,5deg);}
+    48%{transform:scale(1) skew(0,0);}
+    54%{transform:scale(1.05,.8) skew(4deg,4deg);}
+    60%{transform:scale(1) skew(0,0);}
+    64%{transform:skew(3deg,3deg);}
+    68%{transform:skew(0,0);}
+    75%{transform:skew(2deg,2deg);}
+    83%{transform:skew(0,0);}
+    92%{transform:skew(1deg,1deg);}
+    100%{transform:skew(0,0);}
+}
+
+@keyframes animations2{
+    0%{transform:translate(0,1350px);opacity:1;}
+    20%{transform:translate(0,1150px);opacity:1;}
+    30%{transform:translate(0,-350px);opacity:.5;}
+    40%{transform:translate(0,0);opacity:.3;}
+    42%{transform:scale(1.1,.6) skew(5deg,5deg);opacity:.5;}
+    48%{transform:scale(1) skew(0,0);opacity:.3;}
+    54%{transform:scale(1.05,.8) skew(4deg,4deg);opacity:.3;}
+    60%{transform:scale(1) skew(0,0);opacity:.5;}
+    64%{transform:skew(3deg,3deg);opacity:1;}
+    68%{transform:skew(0,0);opacity:1;}
+    75%{transform:skew(2deg,2deg);opacity:.8;}
+    83%{transform:skew(0,0);opacity:.5;}
+    92%{transform:skew(1deg,1deg);opacity:.5;}
+    100%{transform:skew(0,0);opacity:.8}
+}
+@keyframes animations4{
+    /*0%{transform:translate(0,1150px);}
+    20%{transform:translate(0,850px);}
+    30%{transform:translate(0,-350px);}
+    40%{transform:translate(0,0);}
+    42%{transform:scale(1.1,.6) skew(5deg,5deg);}
+    48%{transform:scale(1) skew(0,0);}
+    54%{transform:scale(1.05,.8) skew(4deg,4deg);}
+    60%{transform:scale(1) skew(0,0);}
+    64%{transform:skew(3deg,3deg);}
+    68%{transform:skew(0,0);}
+    75%{transform:skew(2deg,2deg);}
+    83%{transform:skew(0,0);}
+    92%{transform:skew(1deg,1deg);}
+    100%{transform:skew(0,0);}*/
+    0%{transform:skew(0,0);}
+    8%{transform:skew(1deg,1deg);}
+    17%{transform:skew(0,0);}
+    25%{transform:skew(2deg,2deg);}
+    32%{transform:skew(0,0);}
+    36%{transform:skew(3deg,3deg);}
+    40%{transform:scale(1) skew(0,0);}
+    46%{transform:scale(1.05,.8) skew(4deg,4deg);}
+    52%{transform:scale(1) skew(0,0);}
+    58%{transform:scale(1.1,.6) skew(5deg,5deg);}
+    60%{transform:translate(0,0);}
+    70%{transform:translate(0,-350px);}
+    80%{transform:translate(0,850px);}
+    100%{transform:translate(0,1150px);opacity:0;}
+}
+
+@keyframes css3{
+    0%{transform:scale(4);opacity:0;}
+    40%{transform:scale(2);opacity:1;}
+    70%{transform:scale(2);opacity:1;}
+    100%{transform:scale(5);opacity:0;}
+}
+@keyframes css4{
+    0%{transform:scale(4);opacity:0;}
+    40%{transform:scale(2);opacity:1;}
+    70%{transform:scale(2);opacity:1;}
+    100%{transform:scale(5);opacity:0;}
+}
+
+@keyframes animations3{
+    0%{transform:scale(1);opacity:1;}
+    60%{transform:scale(0);opacity:0;}
+    100%{transform:scale(1);opacity:1;}
+}
+@keyframes animations5{
+    0%{transform:scale(1);opacity:1;}
+    60%{transform:scale(0);opacity:0;}
+    100%{transform:scale(1);opacity:0;}
+}
+
+@keyframes animations6{    
+    0%{transform:translate(0,1350px);opacity:1;}
+    20%{transform:translate(0,1150px);opacity:1;}
+    30%{transform:translate(0,-350px);opacity:.5;}
+    40%{transform:translate(0,0);opacity:.3;}
+    42%{transform:scale(1.1,.6) skew(5deg,5deg);opacity:.5;}
+    48%{transform:scale(1) skew(0,0);opacity:.3;}
+    54%{transform:scale(1.05,.8) skew(4deg,4deg);opacity:.3;}
+    60%{transform:scale(1) skew(0,0);opacity:.5;}
+    64%{transform:skew(3deg,3deg);opacity:1;}
+    68%{transform:skew(0,0);opacity:1;}
+    75%{transform:skew(2deg,2deg);opacity:.8;}
+    83%{transform:skew(0,0);opacity:.5;}
+    92%{transform:skew(1deg,1deg);opacity:.5;}
+    100%{transform:skew(0,0);opacity:1}
+}
+.gallery{
+	width: 9%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 400px;
+}
+.gallery h1{
+	color: #fff;
+	font-family: "arial";
+	text-align: center;
+}
+
+.list{
+	width: 60%;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 100px;
+}
+.li{
+	width: 33.333333%;
+	float: left;
+	overflow: hidden;
+}
+.li img{
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	transition: .5s;
+	vertical-align: top;
+}
+.li img:hover{
+	opacity: .5;
+	transition: .5s;
+	transform: scale(1.05);
+}
+
+.footer{
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+	background-image: url(../img/banner.png);	
+	background-color: #383838;
+	margin-top: 300px;
+}
+.clubbox{
+	width: 100%;
+	height: 75px;
+	padding-top:1%;
+	padding-bottom: 0.3%;
+	padding-right: 0.3%;
+	padding-left: 0.3%;
+}	
+.fbclub{
+	width: 10%;
+	float: left;
+}
+.fbclub div{
+	width: 18%;
+	margin-left: 10%;
+	float: left;
+}
+.fbclub img{
+	width: 100%;
+}
+.fake2{
+	width: 90%;
+	height: 30px;
+	text-align: right;
+	float: left;
+}
+.footerbox{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+}
+.private{
+	width: 25%;
+	text-align: left;
+	margin-top: 0.6%;
+	padding-left: 1%;
+	float: left;
+}
+.private span a{
+	color: #fff;
+	white-space: nowrap;
+	text-decoration: none;
+}
+.fake3{
+	width: 65%;
+	float: left;
+	height: 30px;
+}
+.gtclub{
+	width: 10%;
+	margin-top: 0.1%;	
+	text-align: center;
+	float: left;
+}
+.gtclub:before{
+	content: 'TOP';
+	color: #fff;
+	font-size: 1em;
+	position: absolute;
+	right: 3%;
+
+}
+.gtclub img{
+	width: 60%;
+}
+
+
+
+
+
+
+
+				@media (max-width:767px){
+					.navbar{
+						display: none;
+					}
+					.GTicon{
+						position: absolute;
+						top: 5vh;
+						left: 40vw;
+						width: 80px;
+						height: 60px;
+						z-index: 1;
+					}
+					.GTicon img{
+						width: 100%;
+					}
+					.imenu{
+						background-image: url(../img/images.jpg);
+						background-size: 100% 100%;
+						background-repeat: no-repeat;
+						background-position: center;
+						height: calc(100vh);
+					}
+					.imenu ul{
+						position: relative;
+						top: 150px;
+					}
+					.imenu li{
+						padding: 10px 0;
+						
+						/*border: 1px solid red;*/
+					}
+					.imenu li a{
+						font-size: 30px;
+						color: #fff;
+					}
+					.smallbar{
+						position: relative;
+						width: 100%;
+						display: block;
+					}
+					.visonbox{
+						position: relative;
+						top: 100px;
+						width: 85%;
+						height: 150px;
+						margin: auto;
+						/*border: 1px solid red;*/
+					}
+					.hunber{
+						position: absolute;
+						left: 0;
+						top: 50px;
+						z-index: 100;
+						width: 1%;
+						height: 1%;
+					}
+					.hunber2{
+						position: absolute;
+						left: 0;
+						top: 50px;
+						width: 1%;
+						height: 1%;
+						z-index: 100;
+					}		
+
+					/*toggle-icon*/
+				    .toggle-icon {
+				        display: block;
+				        position: relative;
+				        width: 100%;
+				        margin: -2.2em auto 0 0.2em;
+				        transition: margin 600ms;
+				        cursor: pointer;
+				    }
+
+				    .toggle-icon .bar {
+				        display: block;
+				        width: 3.8em;
+				        height: 0.2em;
+				        margin: 0.9em;
+				        border-right: 2.8em solid #fff;
+				        border-left: 0.6em solid #d6d6d6;
+				        box-sizing: border-box;
+				        transition-property: transform, margin, border-right-color, box-shadow;
+				        transition-duration: 600ms;
+				    }
+				        .toggle-icon .bar:nth-of-type(1) {
+				            transition: opacity 300ms;
+				        }
+				        .toggle-icon .bar:nth-of-type(2) {
+				            transform: rotate(-180deg);
+				        }
+
+				    /*pushed*/
+				    .pushed .toggle-icon {
+				        margin: -3.2em 0 0 0.7em;
+				    }
+
+				        .pushed .bar:nth-of-type(1) {
+				            opacity: 0;
+				        }
+
+				        .pushed .bar:nth-of-type(2) {
+				            margin-left: 1.4em;
+				            transform: rotate(-137deg) translateY(-1.5em);
+				        }
+
+				        .pushed .bar:nth-of-type(3) {
+				            margin-left: 0.5em;
+				            transform: rotate(-42deg);
+				        }
+
+				    .pushed .toggle-icon:hover .bar:nth-of-type(2) {
+				        border-right-color: #e9b8b9;
+				        box-shadow: 0.4em 0 0.6em 0.1em rgba(205,40,44,0.75);
+				    }
+				    .pushed .toggle-icon:hover .bar:nth-of-type(3) {
+				        border-right-color: #ddf1da;
+				        box-shadow: 0.4em 0 0.6em 0.1em rgba(83,228,68,0.65);
+				    }
+					
+					#topMessage{
+						position: absolute;
+						background: #777;
+						color: 	#ccc;
+						font: 22px Tahoma;	
+						width: 100%;	
+						height: calc(100vh);
+						margin: 0px auto;
+						text-align: center;
+						z-index: 5;
+						/*animation:animations6 3s ease-out forwards;*/
+						display: none;	
+					}
+					.topMessage{
+						position: absolute;
+						background: #777;
+						color: 	#ccc;
+						font: 22px Tahoma;	
+						width: 100%;	
+						height: calc(100vh);
+						margin: 0px auto;
+						text-align: center;
+						z-index: 5;
+						/*animation:animations4 3s ease-in-out forwards;*/
+						/*animation:animations4 1.85s ease-in-out forwards,animations5 1s ease-out 1.5s forwards;*/
+						display: none;	
+					}
+					@keyframes animations{
+					    0%{transform:translate(0,1150px);}
+					    20%{transform:translate(0,850px);}
+					    30%{transform:translate(0,-70px);}
+					    40%{transform:translate(0,0);}
+					    42%{transform:scale(1.1,.6) skew(5deg,5deg);}
+					    48%{transform:scale(1) skew(0,0);}
+					    54%{transform:scale(1.05,.8) skew(4deg,4deg);}
+					    60%{transform:scale(1) skew(0,0);}
+					    64%{transform:skew(3deg,3deg);}
+					    68%{transform:skew(0,0);}
+					    75%{transform:skew(2deg,2deg);}
+					    83%{transform:skew(0,0);}
+					    92%{transform:skew(1deg,1deg);}
+					    100%{transform:skew(0,0);}
+					}
+					.gallery{
+						width:50%;
+						margin-left: auto;
+						margin-right: auto;
+						margin-top: 200px;
+					}
+					.gallery h1{
+						font-size: 1.5em;
+						color: #fff;
+						font-family: "arial";
+						text-align: center;
+					}
+
+					.list{
+						width: 90%;
+						overflow: hidden;
+						margin: auto;
+						margin-top: 100px;
+					}
+					.li{
+						width: 33.333333%;
+						float: left;
+						overflow: hidden;
+					}
+					.footer{
+						width: 100%;
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						background-size: 100% 100%;
+						background-image: url(../img/banner.png);	
+						background-color: #383838;
+						margin-top: 100px;
+					}
+					.clubbox{
+						width: 100%;
+						height: 35px;
+						padding-top:0.3%;
+						padding-bottom: 0.3%;
+						padding-right: 0.3%;
+						padding-left: 0.3%;
+					}	
+					.fbclub{
+						width: 20%;
+						float: left;
+					}
+					.fbclub div{
+						width: 20%;
+						margin-left: 10%;
+						padding-top: 5%;
+						float: left;
+					}
+					.fbclub img{
+						width: 100%;
+					}
+					.fake2{
+						width: 70%;
+						height: 30px;
+						text-align: right;
+						float: left;
+					}
+					.footerbox{
+						display: inline-block;
+						width: 100%;
+						height: 25px;
+					}
+					.private{
+						width:35%;
+						text-align: left;
+						margin-top: 0.6%;
+						padding-left: 2%;
+						float: left;
+					}
+					.private span a{
+						color: #fff;
+						font-size: 1px;
+						white-space: nowrap;
+						text-decoration: none;
+					}
+					.fake3{
+						width: 48%;
+						float: left;
+						height: 25px;
+					}
+					.gtclub{
+						width: 15%;
+						margin-top: 0.1%;	
+						text-align: center;
+						float: left;
+					}
+					.gtclub:before{
+						content: 'TOP';
+						color: #fff;
+						font-size: 0.8em;
+						position: absolute;
+						right: 2%;
+					}
+					.gtclub img{
+						width: 100%;
+					}
+				}
+
+
+
+
+
+
+
+
+
+
+
+		@media screen and (min-width: 500px) and (max-width:768px){
+			.visonbox{
+				position: relative;
+				top: 100px;
+				width: 85%;
+				height: 150px;
+				margin: auto;
+			}
+			.gallery{
+				width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 300px;
+			}
+			.gallery h1{
+				font-size: 2em;
+				color: #fff;
+				font-family: "arial";
+				text-align: center;
+			}
+			.list{
+				width: 95%;
+				overflow: hidden;
+				margin: auto;
+				margin-top: 50px;
+			}
+			.li{
+				width: 33.333333%;
+				float: left;
+				overflow: hidden;
+			}
+			.li img{
+				width: 100%;
+				height: 100%;
+				transform: scale(1);
+				transition: .5s;
+				vertical-align: top;
+			}
+			.li img:hover{
+				opacity: .5;
+				transition: .5s;
+				transform: scale(1.05);
+			}
+			.footer{
+				width: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-size: 100% 100%;
+				background-image: url(../img/banner.png);	
+				background-color: #383838;
+				margin-top: 150px;
+			}
+			.clubbox{
+				width: 100%;
+				height: 75px;
+				padding-top:0.3%;
+				padding-bottom: 0.3%;
+				padding-right: 0.3%;
+				padding-left: 0.3%;
+			}	
+			.fbclub{
+				width: 24%;
+				float: left;
+			}
+			.fbclub div{
+				width: 20%;
+				margin-left: 10%;
+				padding-top: 5%;
+				float: left;
+			}
+			.fbclub img{
+				width: 100%;
+			}
+			.fake2{
+				width: 70%;
+				height: 30px;
+				text-align: right;
+				float: left;
+			}
+			.footerbox{
+				display: inline-block;
+				width: 100%;
+				height: 25px;
+			}
+			.private{
+				width:35%;
+				text-align: left;
+				margin-top: 0.6%;
+				padding-left: 3%;
+				float: left;
+			}
+			.private span a{
+				color: #fff;
+				font-size: 1.2em;
+				white-space: nowrap;
+				text-decoration: none;
+			}
+			.fake3{
+				width: 42%;
+				float: left;
+				height: 25px;
+			}
+			.gtclub{
+				width: 20%;
+				margin-top: -3%;	
+				text-align: center;
+				float: left;
+			}
+			.gtclub:before{
+				content: 'TOP';
+				color: #fff;
+				font-size: 1.8em;
+				position: absolute;
+				right: 3%;
+			}
+			.gtclub img{
+				width: 100%;
+			}
+
+		}

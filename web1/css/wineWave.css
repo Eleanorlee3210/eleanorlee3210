@@ -1,0 +1,50 @@
+.wineWave{
+	width: 30px;
+	/*height: 300px;*/
+	/*border:1px solid #f00;*/
+	background-color: #fff;
+	position: relative;
+	z-index: -2;
+	overflow: hidden;
+	float: left;
+	margin: 15px 0px 0px 20px;
+}
+.wineWave:before{
+	content: '';
+	position: absolute;
+    background: #7c1924;
+    width: 50px;
+    height: 20px;
+    top: 23%;
+    left: -10px;
+    z-index: 1;
+    display: block;
+    border-top-right-radius: 50%;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    animation: curve 4s infinite ease-in-out;
+    animation-delay: .5s;
+    background-clip: border-box;
+    transform: rotate(-10deg);
+}
+.wineWave img{
+	width: 100%;
+	vertical-align: top;
+	position: relative;
+	z-index: 2;
+}
+@keyframes curve {
+    25%, 75% {
+        border-top: 2px solid rgba(255, 255, 255, 0);
+    }
+    50% {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 0;
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        transform: rotate(10deg);
+    }
+}
+@media screen and (max-width: 767px){
+	.wineWave{
+		width: 25px;
+	}
+}

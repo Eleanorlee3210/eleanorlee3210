@@ -1,0 +1,98 @@
+.cover{
+		width: 100vw;
+		height: 100vh;
+		background-color: #fff;
+		position: fixed;
+		z-index: 5;
+		top: -1000vw;
+		left: 0;
+		animation: open 4.5s 0s;
+}
+@keyframes open{
+	0%{
+		top: 0;
+	}
+	99.99999%{
+		top: 0;
+	}
+	100%{
+		top:-1000vw;
+	}
+}
+.cover .bottle{
+	width: 100px;
+	height: 360px;
+	/*background-color: #fff;*/
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.wine{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	background-color: rgba(124,25,36,1);
+	position: absolute;
+	left: -150px;
+	bottom: 0;
+	transition: 1s;
+	animation: wine 4s .5s alternate backwards;
+	border-radius: 45%;
+}
+.cover .bottle img{
+	width: 100px;
+	vertical-align: top;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+@keyframes wine{
+	0%{
+		transform: rotate(0deg);
+		bottom: -110%
+	}
+	10%{
+		transform: rotate(90deg);
+		bottom: -100%
+	}
+	20%{
+		transform: rotate(180deg);
+		bottom: -90%;
+	}
+	30%{
+		transform: rotate(270deg);
+		bottom: -80%
+	}
+	40%{
+		transform: rotate(360deg);
+		bottom: -70%;
+	}
+	50%{
+		transform: rotate(450deg);
+		bottom: -60%
+	}
+	60%{
+		transform: rotate(540deg);
+		bottom: -50%;
+	}
+	70%{
+		transform: rotate(630deg);
+		bottom: -40%
+	}
+	80%{
+		transform: rotate(720deg);
+		bottom: -30%
+	}
+	90%{
+		transform: rotate(810deg);
+		bottom: -20%
+	}
+	100%{
+		transform: rotate(900deg);
+		bottom: 0%;
+	}
+}

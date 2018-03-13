@@ -1,0 +1,280 @@
+@media (max-width:767px){
+		*{
+			position: relative;
+			outline: 1px solid red;
+		}
+		.box1{
+			width: 100%;
+			height: 100vh;
+			background-image: url(../img/brand_asia-mobile.png);
+			background-color: #333;
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: cover;
+		}
+		.box1:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0);
+		}				
+		.navbar{
+			display: none;
+		}
+		.smallbar{
+			position: relative;
+			width: 100%;
+			display: block;
+		}
+		.GTicon{
+			position: absolute;
+			top: 5vh;
+			left: 40vw;
+			width: 80px;
+			height: 60px;
+			z-index: 1;
+		}
+		.GTicon img{
+			width: 100%;
+		}
+		.imenu{
+			background-image: url(../img/images3.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: calc(100vh);
+		}
+		.imenu ul{
+			position: relative;
+			top: 100px;
+		}
+		.imenu li{
+			padding: 10px 0;
+			border: 1px solid red;
+		}
+		.imenu li a{
+			font-size: 30px;
+			color: #fff;
+		}
+		.hunber{
+			position: absolute;
+			left: 0;
+			top: 50px;
+			z-index: 5;
+			width: 1%;
+			height: 1%;
+		}
+		.hunber2{
+			position: absolute;
+			left: 0;
+			top: 50px;
+			width: 1%;
+			height: 1%;
+			z-index: 5;
+		}		
+		/*toggle-icon*/
+	    .toggle-icon {
+	        display: block;
+	        position: relative;
+	        width: 100%;
+	        margin: -2.2em auto 0 0.2em;
+	        transition: margin 600ms;
+	        cursor: pointer;
+	    }
+	    .toggle-icon .bar {
+	        display: block;
+	        width: 3.8em;
+	        height: 0.2em;
+	        margin: 0.9em;
+	        border-right: 2.8em solid #fff;
+	        border-left: 0.6em solid #d6d6d6;
+	        box-sizing: border-box;
+	        transition-property: transform, margin, border-right-color, box-shadow;
+	        transition-duration: 600ms;
+	    }
+	        .toggle-icon .bar:nth-of-type(1) {
+	            transition: opacity 300ms;
+	        }
+	        .toggle-icon .bar:nth-of-type(2) {
+	            transform: rotate(-180deg);
+	        }
+
+	    /*/*pushed*/
+	    .pushed .toggle-icon {
+	        margin: -3.2em 0 0 0.7em;
+	    }
+        .pushed .bar:nth-of-type(1) {
+            opacity: 0;
+        }
+
+        .pushed .bar:nth-of-type(2) {
+            margin-left: 1.4em;
+            transform: rotate(-137deg) translateY(-1.5em);
+        }
+
+        .pushed .bar:nth-of-type(3) {
+            margin-left: 0.5em;
+            transform: rotate(-42deg);
+        }
+	    .pushed .toggle-icon:hover .bar:nth-of-type(2) {
+	        border-right-color: #e9b8b9;
+	        box-shadow: 0.4em 0 0.6em 0.1em rgba(205,40,44,0.75);
+	    }
+	    .pushed .toggle-icon:hover .bar:nth-of-type(3) {
+	        border-right-color: #ddf1da;
+	        box-shadow: 0.4em 0 0.6em 0.1em rgba(83,228,68,0.65);
+	    }
+		#topMessage{
+			position: absolute;
+			background: #777;
+			color: 	#ccc;
+			font: 22px Tahoma;	
+			width: 100%;	
+			height: calc(100vh);
+			margin: 0px auto;
+			text-align: center;
+			z-index: 5;
+			animation:animations6 3s ease-out forwards;
+			display: none;	
+		}
+		.topMessage{
+			position: absolute;
+			background: #777;
+			color: 	#ccc;
+			font: 22px Tahoma;	
+			width: 100%;	
+			height: calc(100vh);
+			margin: 0px auto;
+			text-align: center;
+			z-index: 5;
+			animation:animations4 3s ease-in-out forwards;
+			animation:animations4 1.85s ease-in-out forwards,animations5 1s ease-out 1.5s forwards;
+			display: none;	
+		}
+
+		.asia{
+			width: 15%;
+			font-weight: bold;
+			color: #fff;
+			font-size: 25px;
+			position: relative;
+			top: 20vh;
+			left: 5vw;
+		}
+		.box2 a{
+			opacity: 1;
+		}		
+		.box2{
+			width: 100%;
+			height: 280px;
+			top: 250px;
+		}
+		.jpn{
+			position: relative;
+			top: -100px;
+			left: -14vw;
+			width: 35%;
+			height: 140px;
+			float: left;
+			margin-left: 50px;
+		}
+		.jpn img{
+			width: 70%;
+			height: 70%;
+		}
+		.toyota{
+			top: 5vh;
+			right: 51vw;
+			width: 40%;
+			height: 25px;
+		}
+		.toyota img{
+			width: 100%;
+			margin-top: 0px;
+		}
+		.nissan{
+			top: -6vh;
+			left: 4vw;
+			width: 40%;
+		}
+		.nissan img{
+			width: 50%;
+			vertical-align: middle;
+		}
+		.honda{
+			width: 35%;
+			right: 42vw;
+			top: -7vh;
+			text-align: center;
+		}
+		.honda img{
+			width: 50%;
+			height:50%;
+			vertical-align: middle;
+		}
+		.mazda{
+			width: 40%;		
+			top: -20vh;
+			left: 52vw;
+			text-align: center;
+		}
+		.mazda img{
+			width: 50%;
+		}
+		.subaru{
+			width: 30%;
+			margin-left: 2.5%;
+			margin-top: 30px;
+			top: -5vh;
+			left: -34vw;
+		}
+		.subaru img{
+			width: 100%;
+			vertical-align: middle;
+		}
+		.box3{
+			height: 70px;
+		}
+		.mitsubishi{
+			position: relative;
+			width: 30%;
+			margin-left: 0%;
+			margin-top: 15px;
+			top: -16vh;
+			left: 60vw;
+			float: none;
+		}
+		.mitsubishi img{
+			width: 100%;
+		}
+		.daihatsu{
+			width: 45%;
+			margin-left: 0%;
+			margin-top: 0px;
+			top: -10vh;
+			left: 5vw;
+		}
+		.daihatsu img{
+			width: 100%;
+		}
+		.lexus{
+			width: 25%;
+			margin-left: 0%;
+			top: -16vh;
+			left: 16vw;
+			float: left;
+		}
+		.lexus img{
+			width: 100%;
+			vertical-align: middle;
+		}
+
+
+
+
+}
+		
+
